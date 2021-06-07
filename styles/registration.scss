@@ -1,0 +1,184 @@
+// * {
+//     padding: 0;
+//     margin: 0;
+// }
+
+
+.reg__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.form {
+
+    &__header {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    &__field {
+        display: block;
+        padding: 13px 135px 16px 17px;
+        border: none;
+        outline: 1px solid #E5E5E5;
+        margin: 20px 0 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    &__field:focus {
+        outline: none;
+        background-color: rgb(187, 179, 179);
+        transition: all 1s;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__field:focus::placeholder {
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__radiobtn {
+        margin: 31px 10px 32px 25px;
+
+    }
+
+    &__header__log {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    &__choose {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 13px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin: 16px 0 99px;
+        width: 359px;
+    }
+
+    &__join {
+        padding: 16px 66px 17px 29px;
+        border: none;
+        color: white;
+        background-color: #F16D7F;
+        background-image: url("../images/arrowbtn.svg");
+        background-repeat: no-repeat;
+        background-position: 120px;
+        margin: 0 0 96px 0;
+    }
+
+    &__join:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    &__join:active {
+        
+        background-color: #f8bfc6;
+        color: black;
+        transition:  0.1s;
+     
+    }
+
+}
+
+
+
+
+
+
+.loyalty {
+  width: 60%;
+ 
+
+    &__header {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__text {
+        margin: 22px 0 21px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        width: 100%;
+
+    }
+
+    &__list {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        list-style-type: none;
+    }
+
+    &__list li {
+        margin: 0 0 22px;
+    }
+
+    &__list li::before {
+        content: url("../images/ok.svg");
+        margin: 0 22px 0 0;
+    }
+
+}
+
+
+@media(max-width: 768px) {
+
+
+
+    .loyalty {
+        // width: 100%;
+
+        &__text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            width: 100%;
+        }
+
+        &__list {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px
+        }
+
+    }
+}
+
+@media(max-width: 667px) {
+
+    .reg__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+
+
+        &__text {
+            margin: 16px 0 40px;
+        }
+    }
+
+    .loyalty {
+        margin-bottom: 96px;
+        width: 99%;
+    }
+}

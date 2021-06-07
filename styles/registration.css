@@ -1,0 +1,176 @@
+.reg__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 64px;
+}
+
+.form__header {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.form__field {
+  display: block;
+  padding: 13px 135px 16px 17px;
+  border: none;
+  outline: 1px solid #E5E5E5;
+  margin: 20px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.form__field:focus {
+  outline: none;
+  background-color: #bbb3b3;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: white;
+  text-transform: uppercase;
+}
+
+.form__field:focus::-webkit-input-placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+.form__field:focus:-ms-input-placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+.form__field:focus::-ms-input-placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+.form__field:focus::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+.form__radiobtn {
+  margin: 31px 10px 32px 25px;
+}
+
+.form__header__log {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.form__choose {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 13px;
+}
+
+.form__text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 16px 0 99px;
+  width: 359px;
+}
+
+.form__join {
+  padding: 16px 66px 17px 29px;
+  border: none;
+  color: white;
+  background-color: #F16D7F;
+  background-image: url("../images/arrowbtn.svg");
+  background-repeat: no-repeat;
+  background-position: 120px;
+  margin: 0 0 96px 0;
+}
+
+.form__join:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form__join:active {
+  background-color: #f8bfc6;
+  color: black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.loyalty {
+  width: 60%;
+}
+
+.loyalty__header {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loyalty__text {
+  margin: 22px 0 21px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  width: 100%;
+}
+
+.loyalty__list {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  list-style-type: none;
+}
+
+.loyalty__list li {
+  margin: 0 0 22px;
+}
+
+.loyalty__list li::before {
+  content: url("../images/ok.svg");
+  margin: 0 22px 0 0;
+}
+
+@media (max-width: 768px) {
+  .loyalty__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+  }
+  .loyalty__list {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 667px) {
+  .reg__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form__text {
+    margin: 16px 0 40px;
+  }
+  .loyalty {
+    margin-bottom: 96px;
+    width: 99%;
+  }
+}
+/*# sourceMappingURL=registration.css.map */

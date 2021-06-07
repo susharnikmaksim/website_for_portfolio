@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top__slider {
+
+    background-color: #F7F7F7;
+}
+
+
+.slider__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 777px;
+    align-items: center;
+}
+
+.slider__pointer {
+    padding: 12px;
+    border: none;
+    background-color: lightgrey;
+}
+.slider__img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.slider__img img{
+    max-width: 100%;
+    display: block;
+}
+
+.slider__pointer:hover {
+    opacity: 0.8;
+
+}
+
+.slider__pointer:active {
+    background-color: grey;
+}
+
+
+
+.pointer__pink:hover {
+    fill: #EF5B70;
+}
+
+
+
+.prod__container {
+    background-color: #fff;
+    text-align: center;
+    margin-top: -30px;
+    outline: 0.3px solid #ccc;
+    margin-bottom: 136px;
+}
+
+.discrip h4 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 64px 0 13px;
+    color: #F16D7F;
+}
+
+.rose__line {
+    width: 63px;
+    margin: 0 auto;
+    height: 4px;
+    background-color: #F16D7F;
+    border: none;
+
+
+
+
+}
+
+.discrip h3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 0 48px;
+    color: #4D4D4D;
+}
+
+.discrip p {
+   width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E;
+
+}
+
+.grey__line {
+    max-width: 100%;
+    margin: 0 auto;
+    opacity: 0.3;
+}
+
+.discrip span {
+    display: block;
+    padding: 32px 0 64px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+
+}
+
+
+.choose {
+    display: flex;
+    justify-content: center;
+    padding: 64px 5px 48px 0;
+}
+
+.choose p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+
+}
+
+.choose p::after {
+    content: url("../images/strelka.svg");
+    padding: 0 0 0 9px;
+}
+
+.choose p:not(:last-child) {
+    margin: 0 42px 0 0;
+}
+
+.add__cart {
+    /* display: inline-block; */
+    background-color: transparent;
+    border: 1px solid #EF5B70;
+    color: #EF5B70;
+    padding: 15px 57px 15px 73px;
+    margin: 0 0 56px;
+    background: url("../images/basketrosy.svg") no-repeat;
+    background-position: 22px center;
+}
+
+.add__cart:hover {
+    transform: scale(1.1);
+    padding: 15px 57px 15px 57px;
+    transition: all 0.5s;
+    background-color: #EF5B70;
+    color: #fff;
+    background-position: 100px;
+}
+
+.add__cart:active {
+    transition: 0.1s;
+    opacity: 0.2;
+}
+
+
+.some__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+.some__elem {
+    height: 581px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+
+
+
+.some__elem:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+
+@media(max-width: 1140px) {
+    .container {
+        padding: 0;
+    }
+
+    .some__container {
+        justify-content: center;
+    }
+
+
+
+    .goods__elem:last-child {
+        display: none;
+    }
+
+    .goods__elem:hover {
+        transform: scale(1);
+    }
+
+
+}
+
+    @media(max-width: 667px) {
+
+        .some__container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
