@@ -6,10 +6,12 @@ let quitBtn = document.querySelector(".menu__quit");
 
 
 
-burgerBtn.onclick = function () {
+burgerBtn.onclick = function openClose () {
     nav.classList.toggle('open');
     nav.classList.toggle('close');
+
 }
+
 
 
 quitBtn.onclick = function () {

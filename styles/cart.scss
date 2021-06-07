@@ -157,8 +157,7 @@ body {
     margin-top: 20px;
     width: 100%;
     box-sizing: border-box;
-    color: white;
-    box-sizing: border-box;
+
 }
 
 .country:focus,
@@ -166,13 +165,13 @@ body {
 .post__code:focus {
     outline: none;
     background-color: rgb(187, 179, 179);
-    transition: all 1s;
+    transition: all 0,4s;
 }
 
 .country:focus::placeholder,
 .state:focus::placeholder,
 .post__code:focus::placeholder {
-    color: white;
+    color:white;
     text-transform: uppercase;
 }
 
@@ -337,7 +336,7 @@ body {
     }
 
     .card__img img {
-        width: 82%;
+        width: 85%;
     }
 
     .card__info {

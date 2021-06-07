@@ -85,7 +85,7 @@ header {
   z-index: 10;
   right: 0;
   top: 79px;
-  height: calc(100vh - 79px);
+  min-height: 100%;
   -webkit-box-shadow: #9F9F9F 0 0 10px 2px;
           box-shadow: #9F9F9F 0 0 10px 2px;
 }
@@ -117,7 +117,13 @@ header {
 }
 
 .menu__man {
-  padding-left: 24px;
+  padding-left: 54px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+.menu__man:last-child {
+  padding-bottom: 135px;
 }
 
 .close {
@@ -126,11 +132,6 @@ header {
 
 .open {
   display: block;
-}
-
-.menu__man {
-  padding-left: 54px;
-  list-style-type: none;
 }
 
 .menu__list {
@@ -713,6 +714,9 @@ header {
   }
   .menu__right {
     padding-right: 32px;
+  }
+  .menu__man:last-child {
+    padding-bottom: 15px;
   }
   .menu__left {
     padding-left: 32px;

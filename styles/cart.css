@@ -151,8 +151,6 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: white;
-  box-sizing: border-box;
 }
 
 .country:focus,
@@ -160,8 +158,8 @@ body {
 .post__code:focus {
   outline: none;
   background-color: #bbb3b3;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0,4s;
+  transition: all 0,4s;
 }
 
 .country:focus::-webkit-input-placeholder,
@@ -347,7 +345,7 @@ body {
     width: 70%;
   }
   .card__img img {
-    width: 82%;
+    width: 85%;
   }
   .card__info {
     padding: 3px 27px 3px 0px;
